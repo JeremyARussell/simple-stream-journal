@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
 using System.Drawing.Printing;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Simple_Stream_Journal
 {
@@ -104,5 +105,9 @@ namespace Simple_Stream_Journal
             e.Cancel = needsSaved;
         }
 
+        private void writeSomethingTimer_Tick(object sender, EventArgs e)
+        {
+            Activate();
+        }
     }
 }

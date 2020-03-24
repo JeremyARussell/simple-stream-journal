@@ -33,6 +33,7 @@
             this.controlCurrentContentTextBox = new System.Windows.Forms.TextBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.controlStampTimer = new System.Windows.Forms.Timer(this.components);
+            this.writeSomethingTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -92,6 +93,12 @@
             this.controlStampTimer.Interval = 1000;
             this.controlStampTimer.Tick += new System.EventHandler(this.controlStampTimer_Tick);
             // 
+            // writeSomethingTimer
+            // 
+            this.writeSomethingTimer.Enabled = true;
+            this.writeSomethingTimer.Interval = 900000;
+            this.writeSomethingTimer.Tick += new System.EventHandler(this.writeSomethingTimer_Tick);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -118,6 +125,7 @@
         private System.Windows.Forms.TextBox controlCurrentContentTextBox;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Timer controlStampTimer;
+        private System.Windows.Forms.Timer writeSomethingTimer;
     }
 }
 
