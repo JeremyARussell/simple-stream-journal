@@ -44,14 +44,14 @@
             this.controlOldContentTextBox.AcceptsReturn = true;
             this.controlOldContentTextBox.AcceptsTab = true;
             this.controlOldContentTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.controlOldContentTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.controlOldContentTextBox.HideSelection = false;
             this.controlOldContentTextBox.Location = new System.Drawing.Point(0, 0);
-            this.controlOldContentTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.controlOldContentTextBox.Multiline = true;
             this.controlOldContentTextBox.Name = "controlOldContentTextBox";
             this.controlOldContentTextBox.ReadOnly = true;
             this.controlOldContentTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.controlOldContentTextBox.Size = new System.Drawing.Size(1008, 530);
+            this.controlOldContentTextBox.Size = new System.Drawing.Size(672, 344);
             this.controlOldContentTextBox.TabIndex = 0;
             // 
             // controlCurrentContentTextBox
@@ -59,13 +59,13 @@
             this.controlCurrentContentTextBox.AcceptsReturn = true;
             this.controlCurrentContentTextBox.AcceptsTab = true;
             this.controlCurrentContentTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.controlCurrentContentTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.controlCurrentContentTextBox.HideSelection = false;
             this.controlCurrentContentTextBox.Location = new System.Drawing.Point(0, 0);
-            this.controlCurrentContentTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.controlCurrentContentTextBox.Multiline = true;
             this.controlCurrentContentTextBox.Name = "controlCurrentContentTextBox";
             this.controlCurrentContentTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.controlCurrentContentTextBox.Size = new System.Drawing.Size(1008, 201);
+            this.controlCurrentContentTextBox.Size = new System.Drawing.Size(672, 131);
             this.controlCurrentContentTextBox.TabIndex = 1;
             this.controlCurrentContentTextBox.TextChanged += new System.EventHandler(this.controlCurrentContentTextBox_TextChanged);
             // 
@@ -73,7 +73,6 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -84,9 +83,8 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.controlCurrentContentTextBox);
-            this.splitContainer1.Size = new System.Drawing.Size(1008, 737);
-            this.splitContainer1.SplitterDistance = 530;
-            this.splitContainer1.SplitterWidth = 6;
+            this.splitContainer1.Size = new System.Drawing.Size(672, 479);
+            this.splitContainer1.SplitterDistance = 344;
             this.splitContainer1.TabIndex = 2;
             // 
             // controlStampTimer
@@ -96,11 +94,10 @@
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 737);
+            this.ClientSize = new System.Drawing.Size(672, 479);
             this.Controls.Add(this.splitContainer1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Main";
             this.Text = "Simple Stream Journal";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);

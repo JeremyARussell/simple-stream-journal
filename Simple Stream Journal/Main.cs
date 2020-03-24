@@ -78,7 +78,7 @@ namespace Simple_Stream_Journal
 
         private void NameTitle() {
             var folderName = Directory.GetCurrentDirectory().Split(Path.DirectorySeparatorChar).Last();
-            Text = "Stream Journal - " + folderName;
+            Text = folderName + " - Notes";
         }
 
         private void controlStampTimer_Tick(object sender, EventArgs e) {
